@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/MissionControl.Api/MissionControl.Api.csproj" />
+    <Project Path="src/MissionControl.Core/MissionControl.Core.csproj" />
+    <Project Path="src/MissionControl.Web/MissionControl.Web.csproj" />
+  </Folder>
+</Solution>
