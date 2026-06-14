@@ -29,13 +29,15 @@ public class SatelliteService : ISatelliteService
         }
     ];
 
-    public IEnumerable<Satellite> GetAll()
+        public Task<IEnumerable<Satellite>> GetAllAsync()
     {
-        return _satellites;
+        return Task.FromResult(_satellites.AsEnumerable());
     }
 
-    public Satellite? GetById(int id)
+    public Task<Satellite?> GetByIdAsync(int id)
     {
-        return _satellites.FirstOrDefault(x => x.Id == id);
+        return Task.FromResult(
+            _satellites.FirstOrDefault(x => x.Id == id)
+        );
     }
 }

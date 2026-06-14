@@ -16,24 +16,24 @@ public class SatellitesController : ControllerBase
     }
 
     [HttpGet]
-    public IActionResult GetAll()
+    public async Task<IActionResult> GetAll()
     {
-        var satellites = _satelliteService
-            .GetAll()
-            .Select(s => new SatelliteDto
-            {
-                Id = s.Id,
-                Name = s.Name,
-                NoradId = s.NoradId
-            });
+        var satellites = await _satelliteService.GetAllAsync();
 
-        return Ok(satellites);
+        var satelliteDtos = satellites.Select(s => new SatelliteDto
+        {
+            Id = s.Id,
+            Name = s.Name,
+            NoradId = s.NoradId
+        });
+
+        return Ok(satelliteDtos);
     }
 
     [HttpGet("{id}")]
-    public IActionResult GetById(int id)
+    public async Task<IActionResult> GetById(int id)
     {
-        var satellite = _satelliteService.GetById(id);
+        var satellite = await _satelliteService.GetByIdAsync(id);
 
         if (satellite is null)
         {
