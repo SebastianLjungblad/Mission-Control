@@ -87,3 +87,4 @@
 /Users/sebastianljungblad/mission-control/src/MissionControl.Web/obj/Debug/net10.0/MissionControl.Web.pdb
 /Users/sebastianljungblad/mission-control/src/MissionControl.Web/obj/Debug/net10.0/MissionControl.Web.genruntimeconfig.cache
 /Users/sebastianljungblad/mission-control/src/MissionControl.Web/obj/Debug/net10.0/ref/MissionControl.Web.dll
+/Users/sebastianljungblad/mission-control/src/MissionControl.Web/obj/Debug/net10.0/MissionControl.Web.sourcelink.json

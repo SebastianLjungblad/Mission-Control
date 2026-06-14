@@ -9,3 +9,4 @@
 /Users/sebastianljungblad/mission-control/src/MissionControl.Core/obj/Debug/net10.0/refint/MissionControl.Core.dll
 /Users/sebastianljungblad/mission-control/src/MissionControl.Core/obj/Debug/net10.0/MissionControl.Core.pdb
 /Users/sebastianljungblad/mission-control/src/MissionControl.Core/obj/Debug/net10.0/ref/MissionControl.Core.dll
+/Users/sebastianljungblad/mission-control/src/MissionControl.Core/obj/Debug/net10.0/MissionControl.Core.sourcelink.json
